@@ -68,3 +68,7 @@ console.log(rersult);
 let reresult = eemail.substring(0,10);
 console.log(reresult);
 
+//replace
+
+let ressult = email.replace('r', 'w');
+console.log(replace);
