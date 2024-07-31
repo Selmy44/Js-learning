@@ -1,10 +1,10 @@
 // keywords
-let age = 25;
+let age1 = 25;
 let year =2024;
-console.log(age, year);
+console.log(age1, year);
 
-age = 35;
-console.log(age);
+age1 = 35;
+console.log(age1);
 
 const points = 125;
 console.log(points);
@@ -41,8 +41,8 @@ console.log(FullName.length);
 
 console.log(FullName.toUpperCase());
 
-let result = FullName.toLowerCase();
-console.log(result, FullName);
+// let result = FullName.toLowerCase();
+// console.log(result, FullName);
 
 //argument
 
@@ -70,5 +70,155 @@ console.log(reresult);
 
 //replace
 
-let ressult = email.replace('r', 'w');
-console.log(replace);
+let ressult = eemail.replace('r', 'w');
+console.log(ressult);
+
+//mathematics
+let radius = 10;
+const pi = 3.14;
+
+//division
+console.log(10 / 2);
+
+//order of operation B I D M A S
+let resultt = 5* (10 - 3) **2;
+console.log(resultt);
+
+//show hand operation
+// let likes = 10;
+
+// likes++;
+//this the same as likes = 10 + 1;
+
+//likes--;
+//this the same as likes = 10 - 1;
+
+// likes += 10;
+//this is the same as likes = 10 + 10;
+
+// likes -= 5;
+//this is the same as likes = 10 - 5;
+
+// likes *= 2;
+//this is the same as likes = 10 * 2;
+
+// likes /=2;
+//this is the same as likes = 10 / 2;
+
+// console.log(likes);
+
+//NaN - Not A Number
+console.log(5 / 'Hello');
+console.log(5 * 'Hello');
+
+
+//template strings
+const tittle = 'Best reads of 2024';
+const Author = 'Nshuti';
+const likes = 30;
+
+//concatenation way
+let result1 = 'The Blog called ' + tittle + ' by ' + Author + ' has ' + likes + ' likes ';
+console.log(result1);
+
+//template string way
+let result2 = `The blog called ${tittle} by ${Author} has ${likes} likes`;
+console.log(result2);
+
+// creating html templates
+let html = `
+            <h2>${tittle}</h2>
+            <p>By ${Author}</p>
+            <span>This bloh has ${likes} likes</span>
+`;
+console.log(html);
+
+
+//Arrays
+
+//strings
+let Nshuti = ['Selmy','king','David'];
+ 
+Nshuti[1] = 'Umwami'
+console.log(Nshuti[1]);
+
+//numbers
+let selmy = [10,20,30];
+console.log(selmy[2]);
+
+//Array methods
+
+let nshuti = ['selmy','king','david'];
+console.log(nshuti.join('-'));
+
+let result3 = nshuti.indexOf('david');
+console.log(result3);
+
+let result4 = nshuti.concat('styles','david');
+console.log(result4);
+
+let result5 = nshuti.push('king');
+console.log(result5);
+result5 = nshuti.pop();
+
+//NaN and Undefined
+
+let age2 = null;
+console.log(age2, age2 + 3, 'The age is ${age2}');
+
+//Booleans & Comparisons
+
+console.log(true, false, 'true', 'false');
+
+//methods can return booleans
+let email1 = 'snshuti@centrika.rw';
+let result6 = email1.includes('@');  // this will return true because there's @ in the email
+console.log(result6);
+
+let names = ['selmy', 'nshuti', 'styles'];
+let result7 = names.includes('king');  //this will return false because there's no king in the array
+console.log(result7);
+
+
+//comparison operators
+
+let age3 = 25;
+
+//equal to
+console.log(age3 == 25);  //true
+console.log(age3 == 30);  //false
+
+//Not equal
+console.log(age3 != 25);  //false
+console.log(age3 != 30);  //true
+
+//less and great than
+console.log(age3 > 30);  //false
+console.log(age3 < 25);  //true
+
+//less and greater than or equal to
+console.log(age3 >= 25);
+console.log(age3 <= 20);
+
+//comparison on strings
+
+let names1 = 'nshuti';
+console.log(names1 == 'nshuti');  //true
+console.log(names1 == 'Nshuti');  //false because a name start with capital letter
+console.log(names1 > 'crystal');  //true because 1st letter of 'nshuti' is greater than 1st letter of 'crystal'
+console.log(names1 < 'Nshuti');   //false because in JavaScript LowerCase letter are greater than UpperCase letter
+
+
+//type conversion
+
+let score1 = '100';
+
+score1 = Number(score1);
+console.log(score1 + 1);
+
+//for loops
+
+for(let i = 2; i < 5; i++){
+        console.log('in loop :', i);
+}
+console.log('loop finished');2o3ydhoi2y3odiy2o3iydo2y3oydo23yod
