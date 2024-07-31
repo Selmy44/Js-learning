@@ -218,7 +218,35 @@ console.log(score1 + 1);
 
 //for loops
 
-for(let i = 2; i < 5; i++){
-        console.log('in loop :', i);
+//Example1
+// for(let i = 0; i < 5; i++){
+//         console.log('in loop :', i);
+// }
+// console.log('loop finished');
+
+
+// //Example2
+// const names2 = ['selmy','nshuti','styles'];
+// for(i = 0; i < names2.length; i++){
+//     console.log(names2[i]);
+// }
+
+
+// //Example3
+// const names3 = ['selmy','nshuti','styles'];
+// for(i = 0; i < names3.length; i++){
+//     let html = `<div>${names3[i]}</div>`
+//     console.log(html)
+// }
+
+
+//While loops
+
+//Example1
+let i = 0;
+
+while(i < 5){
+    console.log('in loop', i);
+    i++;
 }
-console.log('loop finished');2o3ydhoi2y3odiy2o3iydo2y3oydo23yod
+
