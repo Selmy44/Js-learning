@@ -216,37 +216,159 @@ let score1 = '100';
 score1 = Number(score1);
 console.log(score1 + 1);
 
-//for loops
+// for loops
+
+// Example1
+for(let i = 0; i < 5; i++){
+        console.log('in loop :', i);
+}
+console.log('loop finished');
+
+
+//Example2
+const names2 = ['selmy','nshuti','styles'];
+for(i = 0; i < names2.length; i++){
+    console.log(names2[i]);
+}
+
+
+//Example3
+const names3 = ['selmy','nshuti','styles'];
+for(i = 0; i < names3.length; i++){
+    let html = `<div>${names3[i]}</div>`
+    console.log(html)
+}
+
+
+// While loops
 
 //Example1
-// for(let i = 0; i < 5; i++){
-//         console.log('in loop :', i);
-// }
-// console.log('loop finished');
-
-
-// //Example2
-// const names2 = ['selmy','nshuti','styles'];
-// for(i = 0; i < names2.length; i++){
-//     console.log(names2[i]);
-// }
-
-
-// //Example3
-// const names3 = ['selmy','nshuti','styles'];
-// for(i = 0; i < names3.length; i++){
-//     let html = `<div>${names3[i]}</div>`
-//     console.log(html)
-// }
-
-
-//While loops
-
-//Example1
-let i = 0;
+ i = 0;
 
 while(i < 5){
     console.log('in loop', i);
     i++;
 }
 
+//Example2
+const names4 = ['selmy','nshuti','styles'];
+
+ i = 0;
+while(i < names4.length){
+    console.log(names4[i]);
+    i++;
+}
+
+//do while loops
+   i = 2;
+do {
+    console.log('Val of i is :',i);
+    i++;
+}
+    while(i <5);
+
+
+//if statements
+
+//example1
+const age = 25;
+
+if(age > 20){
+    console.log('you are over 20 years old');
+}
+
+//example2
+
+const names5 = ['selmy', 'nshuti','styles'];
+if(names5.length > 2){
+    console.log("That's alot of ninjas");
+}
+
+//else if statements
+
+const password = 'Rwanda@';
+
+if(password.length >= 12){
+    console.log('The password is mighty strong');
+}
+
+else if(password.length >= 8){
+    console.log('The password is strong enough');
+}
+
+else{
+    console.log('password is not long enough');
+}
+
+
+//Logical operators - OR || and AND &&
+
+const password1 = 'Rwanda';  //This password is not strong because the password is under and not equal to 12 or 8. 
+                             //And in the password there's no @ included
+
+if(password1.length >= 12 && password1.includes('@')){
+    console.log('The password is mighty strong');
+}
+
+else if(password1.length >= 8 || password1.includes('@') && password1.length >=5){
+    console.log('The password is strong enough');
+}
+
+else{
+    console.log('The password is not strong');
+}
+
+//Logical NOT ( ! )
+
+let user = false;
+
+if(!user){
+    console.log('You must be logged in to continue');
+}
+
+//trick of the logical NOT ( ! )
+
+console.log(!true);   //This will turn to false because of the NOT ( ! )
+console.log(!false);  //This will turn to true because of the NOT ( ! )
+
+
+//break and continue
+
+const score2 = [50,25,0,30,100,20,10];
+
+for(i = 0; i < score2.length; i++){
+
+    if(score2[i] === 0){
+        continue;
+    }
+    console.log('your score:', score2[i]);
+
+    if(score2[i] === 100){
+        console.log('congrats, you got the top score');
+        break;
+    }
+}
+
+//statements
+
+const grade = 'C';
+
+switch(grade){
+    case 'A':
+        console.log('You got an A!');
+        break;
+    case 'B':
+        console.log('You got a B!');
+        break;
+    case 'C':
+        console.log('You got a C!');
+        break;
+    case 'D':
+        console.log("You got a D!");
+        break;
+    case 'E':
+        console.log('You got a E!');
+        break;
+    default:
+        console.log('not a valid grade');
+}
