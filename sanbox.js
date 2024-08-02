@@ -372,3 +372,124 @@ switch(grade){
     default:
         console.log('not a valid grade');
 }
+
+//function declaration
+
+function greet(){
+    console.log('Hello there');
+}
+
+//function expression (calling the function)
+greet();
+//you can call it many times you want
+greet();
+greet();
+greet();
+
+//Another way of function expression ( The best way, recommanded by Ninja )
+const speak = function(){
+    console.log('Have a good day!');
+};
+
+speak();
+speak();
+speak();
+
+//Arguments & Parameters
+
+//Example1
+// const sum = funtion('a','b'){
+//     console.log(a + b);
+// };
+// sum(1, 2);
+
+
+
+const speak1 = function(name,time){
+    console.log(`Good ${time} ${name}`);
+};
+
+speak1('Selmy','morning');
+
+//another way
+
+const speak2 = function(name = 'Nshuti', time = 'night'){
+    console.log(`Good ${time} ${name}`);
+};
+speak2();
+
+
+
+//returning values on regular function
+
+const calcArea = function(radius){
+    let area = 3.14 * radius ** 2;   //Area
+    return area;  // return the area
+};
+const a = calcArea(5);  //And the area returns here.
+console.log(a);  //execute
+
+
+
+//Another way to return the function
+const calc$area = function(radius){
+    return 3.14 * radius ** 2;
+};
+const b = calc$area(5);
+console.log(b);
+
+
+
+//Arrow function //method 1
+const calc$$area = (radius) =>{
+    return 3.14 * radius ** 2;
+};
+const area =calc$$area(5);
+console.log('Area is :', area);
+
+
+//Arrow function //method 2 // remove the brakets on the function (radius)
+const calc$$$area = radius =>{
+    return 3.14 * radius ** 2;
+};
+const $area =calc$$$area(5);
+console.log('Area is :', $area);
+
+//Arrow function //method 3
+const calCarea = radius => 3.14 * radius ** 2;
+
+const Area =calCarea(5);
+
+console.log('Area is :', Area);
+
+//practice arrow functions for :
+const greett = function(){
+    return 'hello, world';
+};
+const say = greett();
+console.log(say);
+
+
+// answer in row function
+const $greet = () => 'hello, world';
+const sayy = $greet();
+console.log(sayy);
+
+
+//practice 2
+
+const bill = function(products, tax){
+    let total = 0;
+    for(let i = 0; i < products.length; i++){
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+}
+console.log(bill([10,15,30], 0.2));
+
+// For products[0] = 10: 10 + 10 * 0.2 = 10 + 2 = 12
+// For products[1] = 15: 15 + 15 * 0.2 = 15 + 3 = 18
+// For products[2] = 30: 30 + 30 * 0.2 = 30 + 6 = 36
+
+
+
