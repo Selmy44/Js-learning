@@ -491,5 +491,12 @@ console.log(bill([10,15,30], 0.2));
 // For products[1] = 15: 15 + 15 * 0.2 = 15 + 3 = 18
 // For products[2] = 30: 30 + 30 * 0.2 = 30 + 6 = 36
 
-
-
+//arrow function :
+const bill1 = (products, tax) => {
+    let total = 0;
+    for(let i = 0; i<products.length; i++){
+        total+=products[i] + products[i] *tax;
+    }
+    return total;
+}
+console.log(bill([10,15,30],0.2));
