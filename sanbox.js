@@ -500,3 +500,35 @@ const bill1 = (products, tax) => {
     return total;
 }
 console.log(bill([10,15,30],0.2));
+
+
+//example of CallBack function
+
+
+//Example 1
+const myFunc =(callbackFunc) =>{
+    //do something
+    let value = 50;
+    callbackFunc(value);
+};
+myFunc(function(value){
+    //do something
+    console.log(value);
+});
+
+
+//Example 2
+
+// A function that simulates a network request
+function fetchData(url, callback) {
+    setTimeout(() => {
+        const data = { name: "John Doe", age: 30 }; // Simulated data
+        callback(data); // Execute the callback with the data
+    }, 2000); // Simulate a 2-second network delay
+}
+
+// Usage of the fetchData function with a callback
+fetchData('https://api.example.com/user', (data) => {
+    console.log('Data received:', data);
+});
+
