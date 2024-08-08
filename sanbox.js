@@ -126,12 +126,12 @@ let result2 = `The blog called ${tittle} by ${Author} has ${likes} likes`;
 console.log(result2);
 
 // creating html templates
-let html = `
-            <h2>${tittle}</h2>
-            <p>By ${Author}</p>
-            <span>This bloh has ${likes} likes</span>
-`;
-console.log(html);
+// let html = `
+//             <h2>${tittle}</h2>
+//             <p>By ${Author}</p>
+//             <span>This bloh has ${likes} likes</span>
+// `;
+// console.log(html);
 
 
 //Arrays
@@ -499,7 +499,7 @@ const bill1 = (products, tax) => {
     }
     return total;
 }
-console.log(bill([10,15,30],0.2));
+console.log(bill([10,15,30],0.2));``
 
 
 //example of CallBack function
@@ -532,3 +532,78 @@ fetchData('https://api.example.com/user', (data) => {
     console.log('Data received:', data);
 });
 
+// const Keys = require('./keysss');
+
+const key = 'http://localhost:5500';
+
+const backAPI = `${key}/employees`;
+
+console.log("BACKEND API:", backAPI);
+
+const five = 5;
+const six = 6;
+
+// const fuc = () => {
+//     try{
+
+
+//     }catch(error){
+//         console.error("Error: ", error);
+//     }
+// }
+
+console.log(`Multiplication of: ${five} and ${six} is ${five * six}`);
+
+
+
+
+
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li']
+
+const logPerson1 = (person, index) => {
+    console.log(`${index} hello ${person}`);
+};
+
+people.forEach(logPerson1);
+
+
+
+
+const logPerson = (person, index) => {
+    // for(i=1; i<person.length; i++){}\
+    const personx = person;
+    const indexx = index + 1;
+
+    console.log(indexx , personx);
+}
+
+people.forEach(logPerson);
+
+
+
+//get a reference to the 'ul'
+const ul = document.querySelector('.people1');
+
+const people1 =  ['mario','luigi','ryu','shaun','chun-li'];
+
+let html = ``;
+
+// people1.forEach(function(person){
+people1.forEach(person =>{
+    //create html template
+    html += `<li style = "color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
+
+//Object literals
+
+// let user1 {
+//     name = 'Nshuti',
+//     agee = 26,
+//     email2 = 'snshuti@centrika',
+//     location = 'Rwanda',
+//     blogs = ['why mac & cheese rules', '10 things to make with marmite']
+// };
+// console.log(user1);
